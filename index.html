@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Milanix</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
 </head>
 <body>
   <header>
-    <img src="assets/Milanix logo.png" alt="ReadNow Logo" class="logo" />
+    <img src="assets/milanix logo.png" alt="ReadNow Logo" class="logo" />
     <h1>ReadNow</h1>
     <nav>
       <input type="text" id="searchBox" placeholder="Search books...">
@@ -27,19 +25,20 @@
 
   <main>
     <div id="booksContainer">
-      <!-- Example Book -->
+      <!-- Book 1 -->
       <div class="book" data-genre="Romance" data-title="Letters Never Sent">
         <h2>Letters Never Sent</h2>
-        <div class="flipbook">
-          <iframe src="books/Letters Never Sent.pdf" width="100%" height="500px"></iframe>
-        </div>
+        <a href="books/Letters Never Sent.pdf" target="_blank">
+          <img src="books/Letters Never Sent-cover.jpg" alt="Letters Never Sent Cover" class="book-cover" />
+        </a>
       </div>
 
+      <!-- Book 2 -->
       <div class="book" data-genre="SciFi" data-title="The Martian Files">
         <h2>The Martian Files</h2>
-        <div class="flipbook">
-          <iframe src="books/book2.pdf" width="100%" height="500px"></iframe>
-        </div>
+        <a href="books/book2.pdf" target="_blank">
+          <img src="books/book2-cover.jpg" alt="The Martian Files Cover" class="book-cover" />
+        </a>
       </div>
     </div>
 
