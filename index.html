@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReadNow | Wattpad Clone</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="ReadNow Logo" class="logo" />
+    <h1>ReadNow</h1>
+    <nav>
+      <input type="text" id="searchBox" placeholder="Search books...">
+      <select id="genreFilter">
+        <option value="">All Genres</option>
+        <option value="Romance">Romance</option>
+        <option value="Thriller">Thriller</option>
+        <option value="SciFi">Sci-Fi</option>
+        <option value="Fantasy">Fantasy</option>
+      </select>
+      <a href="#submit">Publish</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="booksContainer">
+      <!-- Example Book -->
+      <div class="book" data-genre="Romance" data-title="Love in Twilight">
+        <h2>Love in Twilight</h2>
+        <div class="flipbook">
+          <iframe src="books/book1.pdf" width="100%" height="500px"></iframe>
+        </div>
+      </div>
+
+      <div class="book" data-genre="SciFi" data-title="The Martian Files">
+        <h2>The Martian Files</h2>
+        <div class="flipbook">
+          <iframe src="books/book2.pdf" width="100%" height="500px"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <section id="submit">
+      <h2>Want to Publish Your Story?</h2>
+      <p>Fill the form and upload your book:</p>
+      <a href="https://forms.gle/your-google-form-link" target="_blank" class="submit-btn">Submit via Google Form</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ReadNow. All Rights Reserved.</p>
+    <a href="https://instagram.com" target="_blank"><img src="assets/insta.png" alt="Instagram"/></a>
+    <a href="https://linkedin.com" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"/></a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
