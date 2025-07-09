@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -42,32 +42,39 @@ nav select {
   font-size: 1rem;
 }
 
-/* Main content */
-main {
-  padding: 2rem;
+/* Book grid container */
+#booksContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
 }
 
+/* Individual book card */
 .book {
   background-color: #1e1e1e;
-  margin-bottom: 2rem;
-  padding: 1rem;
   border-radius: 10px;
-  transition: 0.3s ease;
+  padding: 1rem;
   text-align: center;
+  transition: 0.3s ease;
 }
 
 .book h2 {
-  margin-top: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #ffcc80;
 }
 
+/* Book cover styling */
 .book-cover {
-  width: 200px;
+  width: 100%;
+  max-width: 140px;
   height: auto;
   cursor: pointer;
   border-radius: 8px;
   transition: transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
 }
 
 .book-cover:hover {
@@ -78,7 +85,7 @@ main {
 #submit {
   background-color: #222;
   padding: 2rem;
-  margin-top: 3rem;
+  margin: 3rem 1rem 2rem;
   text-align: center;
   border-radius: 10px;
 }
